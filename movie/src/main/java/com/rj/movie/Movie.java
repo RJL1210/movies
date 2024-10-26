@@ -1,7 +1,8 @@
 package com.rj.movie;
 
+import java.util.List;
+
 import org.bson.types.ObjectId;
-import java.util.*;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.data.mongodb.core.mapping.DocumentReference;
@@ -27,6 +28,6 @@ public class Movie {
     private List<String> genres;
     private List<String> backDrops;
     @DocumentReference
-    private List<Review> reviews;
+    private List<Review> reviewIds;
 
 }
